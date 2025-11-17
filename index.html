@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construction Company - Modern Visit Card</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; background:linear-gradient(to bottom,#dfe6ec,#f5f5f5); color:#333; }
+    header { background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat; color:white; padding:60px 20px; text-align:center; backdrop-filter: brightness(0.7); }
+    header h1 { margin:0; font-size:2.5rem; font-weight:bold; }
+    header p { margin-top:10px; font-size:1.2rem; }
+    .section { max-width:900px; margin:40px auto; background:rgba(255,255,255,0.9); padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.2); backdrop-filter:blur(4px); }
+    .section h2 { margin-top:0; color:#1e3d59; font-size:1.8rem; }
+    .services-list li { margin-bottom:8px; }
+    footer { background:#1e3d59; color:white; text-align:center; padding:20px; margin-top:40px; }
+    .modern-nav { margin-top:25px; }
+    .nav-list { list-style:none; padding:0; margin:0; display:flex; justify-content:center; gap:25px; }
+    .nav-list a { color:white; text-decoration:none; font-size:1.1rem; padding:8px 14px; border-radius:6px; transition:background 0.3s; }
+    .nav-list a:hover { background: rgba(255,255,255,0.2); }
+    .dropdown { position:relative; }
+    .dropdown-menu { display:none; position:absolute; top:40px; left:0; background:#274b6b; padding:10px 0; list-style:none; border-radius:8px; min-width:150px; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+    .dropdown-menu li a { display:block; padding:10px 15px; color:white; }
+    .dropdown-menu li a:hover { background: rgba(255,255,255,0.15); }
+    .dropdown:hover .dropdown-menu { display:block; }
+    .hidden { opacity:0; transform:translateY(30px); transition:0.8s ease; }
+    .visible { opacity:1; transform:translateY(0); }
+    /* Random working sections */
+    .stats { display:flex; justify-content:space-around; background:#f0f4f8; padding:50px 0; border-radius:12px; }
+    .stat-box { text-align:center; font-size:24px; }
+    .faq-item { background:#fff; margin:10px 0; padding:15px; border-radius:8px; cursor:pointer; }
+    .faq-answer { display:none; padding-top:10px; color:#666; }
+    .testimonials { background:#ddd; padding:50px; text-align:center; border-radius:12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PrimeBuild Construction</h1>
+    <p>Reliable • Professional • High‑Quality Construction Services</p>
+    <nav class="modern-nav">
+      <ul class="nav-list">
+        <li><a href="#main">Main</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#contact">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#form">Contact Form</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="section" id="main">
+    <h2>About Us</h2>
+    <p>PrimeBuild Construction specializes in residential and commercial construction. With over 15 years of experience, we deliver high‑quality workmanship, modern design, and reliable project execution.</p>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      <li>House Construction</li>
+      <li>Renovation & Remodeling</li>
+      <li>Roofing & Facades</li>
+      <li>Concrete & Foundation Work</li>
+      <li>Interior Design & Finishing</li>
+      <li>Landscape Construction</li>
+    </ul>
+  </div>
+
+  <div class="section stats" id="stats">
+    <div class="stat-box"><strong>120+</strong><br>Projects Completed</div>
+    <div class="stat-box"><strong>50+</strong><br>Skilled Workers</div>
+    <div class="stat-box"><strong>20+</strong><br>Years Experience</div>
+  </div>
+
+  <div class="section" id="faq-section">
+    <h2>FAQ</h2>
+    <div class="faq-item">How long does construction take?
+      <div class="faq-answer">It depends on project scale, usually 2–8 months.</div>
+    </div>
+    <div class="faq-item">Do you provide full renovation?
+      <div class="faq-answer">Yes, including electrical and plumbing.</div>
+    </div>
+    <div class="faq-item">Can I get a free quote?
+      <div class="faq-answer">Yes, contact us for a detailed quote.</div>
+    </div>
+  </div>
+
+  <div class="section testimonials" id="testimonials">
+    <h2>Testimonials</h2>
+    <p>“Amazing work! Fast and high quality.” – Alex</p>
+    <p>“The best construction company I’ve worked with.” – Maria</p>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Gallery</h2>
+    <p>Click an item to view larger (placeholder functionality)</p>
+    <ul>
+      <li class="gallery-item">Modern House Exterior</li>
+      <li class="gallery-item">Renovated Living Room</li>
+      <li class="gallery-item">Industrial Warehouse Foundation</li>
+    </ul>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Form</h2>
+    <form>
+      <input type="text" placeholder="Name" required style="width:100%; padding:8px; margin:5px 0;"><br>
+      <input type="email" placeholder="Email" required style="width:100%; padding:8px; margin:5px 0;"><br>
+      <textarea placeholder="Message" required style="width:100%; padding:8px; margin:5px 0; height:120px;"></textarea><br>
+      <button type="submit" style="padding:10px 20px; background:#1e3d59; color:white; border:none; border-radius:8px; cursor:pointer;">Send</button>
+    </form>
+  </div>
+
+  <div class="section" id="location">
+    <h2>Our Location</h2>
+    <p>Map placeholder (replace with Google Map embed)</p>
+  </div>
+
+  <footer>© 2025 PrimeBuild Construction. All rights reserved.</footer>
+
+  <script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior:'smooth' });
+      });
+    });
+
+    // Fade-in sections
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold:0.2 });
+    document.querySelectorAll('.section').forEach(section => { section.classList.add('hidden'); observer.observe(section); });
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const ans = item.querySelector('.faq-answer');
+        ans.style.display = ans.style.display==='block'?'none':'block';
+      });
+    });
+
+    // Gallery click placeholder
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', ()=>{ alert('This image can be expanded into a modal viewer!'); });
+    });
+  </script>
+</body>
+</html>
